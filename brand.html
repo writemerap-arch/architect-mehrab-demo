@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Mehrab Studio | Brand guide</title>
+<meta name="theme-color" content="#0e0c0a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 42%27%3E%3Crect width=%2732%27 height=%2742%27 fill=%27%230e0c0a%27/%3E%3Cpath d=%27M3 41V18C3 10 9 5 16 1c7 4 13 9 13 17v23%27 fill=%27none%27 stroke=%27%23c9a050%27 stroke-width=%272%27/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..800;1,6..96,400..700&family=Schibsted+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Gulzar&text=%D9%85%DB%81%D8%B1%D8%A7%D8%A8&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0e0c0a;--ink-2:#17130f;--paper:#efe7d8;--mute:#a39a8b;--line:rgba(239,231,216,.15);--brass:#c9a050;--brass-hi:#e8c987;--brick:#b4532f;--brick-hi:#d9774e;--chenab:#7a958a;
+--fd:'Bodoni Moda','Didot',Georgia,serif;--fb:'Schibsted Grotesk','Helvetica Neue',Arial,sans-serif;--fm:'IBM Plex Mono',ui-monospace,Menlo,monospace;--fu:'Gulzar','Noto Nastaliq Urdu',serif;
+--g:max(clamp(16px,5vw,72px),env(safe-area-inset-left,0px));--gr:max(clamp(16px,5vw,72px),env(safe-area-inset-right,0px));color-scheme:dark}
+*{box-sizing:border-box}html{background:var(--ink)}
+body{margin:0;background:var(--ink);color:var(--paper);font:400 1.02rem/1.6 var(--fb);-webkit-font-smoothing:antialiased}
+::selection{background:var(--brick);color:var(--paper)}
+a{color:var(--brass-hi)}
+.w{max-width:1280px;margin:0 auto;padding-left:var(--g);padding-right:var(--gr)}
+header{padding-block:28px;display:flex;justify-content:space-between;align-items:center;gap:16px;border-bottom:1px solid var(--line)}
+.lab{font-family:var(--fm);font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--brass);display:flex;align-items:center;gap:12px;margin:0 0 16px}
+.lab::before{content:"";width:11px;height:11px;background:var(--brass);clip-path:polygon(50% 0%,60.6% 24.5%,85.4% 14.6%,75.5% 39.4%,100% 50%,75.5% 60.6%,85.4% 85.4%,60.6% 75.5%,50% 100%,39.4% 75.5%,14.6% 85.4%,24.5% 60.6%,0% 50%,24.5% 39.4%,14.6% 14.6%,39.4% 24.5%)}
+h1,h2{font-family:var(--fd);font-weight:500;letter-spacing:-.025em;line-height:.98;margin:0;text-wrap:balance}
+h1{font-size:clamp(3rem,9vw,8rem)}h2{font-size:clamp(2.2rem,4.6vw,3.8rem);margin-bottom:28px}
+em{font-style:italic;font-weight:400;color:var(--brass-hi)}
+section{padding-block:clamp(56px,10vw,120px);border-bottom:1px solid var(--line)}
+.intro p{max-width:56ch;color:#d9d1c2;margin-top:24px}
+.logo-row{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:16px}
+.box{border:1px solid var(--line);min-height:240px;display:grid;place-items:center;position:relative;padding:28px}
+.box small{position:absolute;left:14px;bottom:10px;font-family:var(--fm);font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;color:var(--mute)}
+.lock{display:flex;align-items:center;gap:18px}
+.lock svg{width:56px;height:74px;fill:none;stroke-width:1.4}
+.lock .wm{font-family:var(--fd);font-weight:600;letter-spacing:.24em;font-size:2.2rem;line-height:1}
+.lock .wm small{display:block;font-family:var(--fm);font-weight:400;font-size:.62rem;letter-spacing:.34em;margin-top:8px;opacity:.7;position:static}
+.lock .ur{font-family:var(--fu);font-size:2.4rem;padding-left:18px;border-left:1px solid currentColor;direction:rtl;line-height:1.2}
+.light{background:var(--paper);color:var(--ink)}
+.light .lock svg{stroke:var(--ink)}
+.brick{background:var(--brick);color:var(--paper)}
+.sw{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
+.chip{border:1px solid var(--line)}
+.chip div{height:150px}
+.chip p{margin:0;padding:12px 12px 14px;font-size:.88rem;line-height:1.35}
+.chip b{font-family:var(--fd);font-weight:500;font-size:1.35rem;display:block}
+.chip code{font-family:var(--fm);font-size:.68rem;letter-spacing:.08em;color:var(--mute);display:block;margin-top:4px}
+.ratio{display:flex;height:14px;margin-top:22px;border:1px solid var(--line)}
+.ratio span{display:block}
+.type{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.spec{border:1px solid var(--line);padding:28px}
+.spec .big{font-family:var(--fd);font-size:clamp(3.4rem,7vw,6rem);line-height:1;letter-spacing:-.03em}
+.spec .meta{font-family:var(--fm);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);margin-top:14px;line-height:1.8}
+.scale{display:grid;gap:14px;margin-top:8px}
+.scale div{display:grid;grid-template-columns:110px 1fr;align-items:baseline;gap:14px;border-top:1px solid var(--line);padding-top:12px}
+.scale code{font-family:var(--fm);font-size:.64rem;letter-spacing:.1em;color:var(--mute)}
+.motif{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:stretch}
+.jali{min-height:300px;border:1px solid var(--line);background-color:var(--ink-2);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'%3E%3Cg fill='none' stroke='%23c9a050' stroke-width='1'%3E%3Cpath d='M32 8l7 17 17 7-17 7-7 17-7-17-17-7 17-7z'/%3E%3Crect x='21' y='21' width='22' height='22' transform='rotate(45 32 32)'/%3E%3Cpath d='M0 0l6 6M64 0l-6 6M0 64l6-6M64 64l-6-6'/%3E%3C/g%3E%3C/svg%3E")}
+.rules{display:grid;gap:0}
+.rules p{margin:0;padding:16px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:28px 1fr;gap:10px}
+.rules p:last-child{border-bottom:1px solid var(--line)}
+.rules i{font-style:normal;font-family:var(--fm);color:var(--brick-hi);font-size:.8rem}
+.voice{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.voice div{border:1px solid var(--line);padding:24px}
+.voice h3{font-family:var(--fm);font-weight:500;font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;margin:0 0 14px}
+.voice .yes h3{color:var(--chenab)}.voice .no h3{color:var(--brick-hi)}
+.voice ul{margin:0;padding-left:18px;color:#d9d1c2}.voice li{margin:6px 0}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:8px}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:46px;padding:13px 20px;font-family:var(--fm);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;border:1px solid var(--brass);background:var(--brass);color:var(--ink)}
+.btn.g{background:transparent;color:var(--paper);border-color:var(--line)}
+footer{padding-block:34px 60px;color:var(--mute);font-size:.86rem;display:flex;flex-wrap:wrap;gap:12px 30px;justify-content:space-between}
+@media(max-width:900px){.logo-row,.type,.motif,.voice{grid-template-columns:1fr}.sw{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:520px){.sw{grid-template-columns:repeat(2,1fr)}.lock .wm{font-size:1.6rem}.lock .ur{font-size:1.8rem}.lock svg{width:42px;height:56px}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><symbol id="mk" viewBox="0 0 32 42"><path d="M3 41V18C3 10 9 5 16 1c7 4 13 9 13 17v23"/><path d="M8 41V19c0-5 4-9 8-12 4 3 8 7 8 12v22"/><path d="M16 15l1.6 2.2 2.7-.5-.5 2.7L22 21l-2.2 1.6.5 2.7-2.7-.5L16 27l-1.6-2.2-2.7.5.5-2.7L10 21l2.2-1.6-.5-2.7 2.7.5z" fill="var(--star,#d9774e)" stroke="none"/><path d="M1 41h30"/></symbol></defs></svg>
+<div class="w">
+<header><a href="./" style="text-decoration:none;color:var(--paper)" class="lab">Back to the site</a><span class="lab" style="color:var(--mute)">Brand guide · v1</span></header>
+
+<section class="intro">
+  <p class="lab">Mehrab Studio</p>
+  <h1>Built from <em>brick, lime</em><br>and brass.</h1>
+  <p>Mehrab means the arch that faces Makkah, the most carefully made opening in any building. The identity takes its colours from the materials of Gujrat’s own streets: kiln brick, lime plaster, brass fittings and the silt of the Chenab. Its type pairs a sharp Bodoni with drafting-room mono, the way a drawing pairs the elevation with its notes.</p>
+</section>
+
+<section>
+  <p class="lab">Logo</p>
+  <h2>The arch, <em>the star,</em> the name.</h2>
+  <div class="logo-row">
+    <div class="box"><div class="lock" style="color:var(--paper)"><svg style="stroke:var(--brass)"><use href="#mk"/></svg><span class="wm">MEHRAB<small>ARCHITECTS · GUJRAT</small></span><span class="ur" lang="ur" style="color:var(--brass)">مہراب</span></div><small>Primary lockup · on Raat</small></div>
+    <div class="box light"><div class="lock"><svg style="--star:#b4532f"><use href="#mk"/></svg><span class="wm" style="font-size:1.7rem">MEHRAB</span></div><small style="color:#6b6256">On Chuna</small></div>
+    <div class="box brick"><div class="lock"><svg style="stroke:var(--paper);--star:var(--paper)"><use href="#mk"/></svg><span class="ur" lang="ur" style="border:0;padding:0;font-size:3rem">مہراب</span></div><small style="color:#f3d7c6">Urdu mark · on Bhatta</small></div>
+  </div>
+  <p style="max-width:62ch;color:#d9d1c2;margin-top:24px">The mark is a pointed arch drawn as two lines, the way an architect sketches a wall in section, with an eight-point khatam star where the keystone would sit. Keep clear space equal to the arch’s width on every side. Never stretch the mark, outline the wordmark, or set the Urdu name in any face other than a Nastaliq.</p>
+</section>
+
+<section>
+  <p class="lab">Colour</p>
+  <h2>Six materials, <em>one street.</em></h2>
+  <div class="sw">
+    <div class="chip"><div style="background:#0e0c0a;border-bottom:1px solid var(--line)"></div><p><b>Raat</b>Night. The ground for everything.<code>#0E0C0A</code></p></div>
+    <div class="chip"><div style="background:#efe7d8"></div><p><b>Chuna</b>Lime plaster. Text and light surfaces.<code>#EFE7D8</code></p></div>
+    <div class="chip"><div style="background:#c9a050"></div><p><b>Peetal</b>Brass. Lines, actions, focus.<code>#C9A050</code></p></div>
+    <div class="chip"><div style="background:#b4532f"></div><p><b>Bhatta</b>Kiln brick. One emphasis per screen.<code>#B4532F</code></p></div>
+    <div class="chip"><div style="background:#7a958a"></div><p><b>Chenab</b>River silt. Data, maps, blueprint.<code>#7A958A</code></p></div>
+    <div class="chip"><div style="background:#a39a8b"></div><p><b>Khaak</b>Dust. Captions and quiet text.<code>#A39A8B</code></p></div>
+  </div>
+  <div class="ratio" aria-label="Colour proportions"><span style="flex:62;background:#0e0c0a"></span><span style="flex:22;background:#efe7d8"></span><span style="flex:8;background:#a39a8b"></span><span style="flex:5;background:#c9a050"></span><span style="flex:2;background:#7a958a"></span><span style="flex:1;background:#b4532f"></span></div>
+  <p style="font-family:var(--fm);font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);margin-top:10px">Proportion: mostly Raat and Chuna, brass for structure, brick only as an accent</p>
+</section>
+
+<section>
+  <p class="lab">Typography</p>
+  <h2>A drawing has <em>two voices.</em></h2>
+  <div class="type">
+    <div class="spec"><div class="big">Aa <em>Aa</em></div><div class="meta">Bodoni Moda · display<br>500 roman for statements, 400 italic for the turn of a phrase</div></div>
+    <div class="spec"><div class="big" style="font-family:var(--fb);font-weight:500;letter-spacing:-.02em">Aa</div><div class="meta">Schibsted Grotesk · text<br>400 / 500 · paragraphs, forms, captions</div></div>
+    <div class="spec"><div class="big" style="font-family:var(--fm);font-size:clamp(2.6rem,5vw,4.4rem)">15.2 m</div><div class="meta">IBM Plex Mono · notes<br>Uppercase, tracked +16%. Labels, dimensions, buttons</div></div>
+    <div class="spec"><div class="big" style="font-family:var(--fu);direction:rtl;text-align:left">مہراب</div><div class="meta">Gulzar · Urdu<br>Nastaliq for the Urdu name and any Urdu headings</div></div>
+  </div>
+  <div class="scale">
+    <div><code>Display / 96</code><span style="font-family:var(--fd);font-size:clamp(2.4rem,6vw,6rem);line-height:1;letter-spacing:-.03em">Let’s draw <em>your plot.</em></span></div>
+    <div><code>Heading / 48</code><span style="font-family:var(--fd);font-size:clamp(1.8rem,3.4vw,3rem);line-height:1.05">The jali, <em>redrawn.</em></span></div>
+    <div><code>Body / 17</code><span>Punjab has always cooled its houses with perforated screens. We redraw the jali in concrete, brick and steel.</span></div>
+    <div><code>Note / 11</code><span style="font-family:var(--fm);font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--brass)">Altitude 61° · Bearing 202° S</span></div>
+  </div>
+</section>
+
+<section>
+  <p class="lab">Motif</p>
+  <h2>The jali <em>as pattern.</em></h2>
+  <div class="motif">
+    <div class="jali" role="img" aria-label="Khatam star jali pattern in brass on dark ground"></div>
+    <div class="rules">
+      <p><i>01</i>Use the khatam star as a bullet, a divider or a full jali field. Never as decoration on a photograph.</p>
+      <p><i>02</i>Lines are 1px brass on Raat, or 1px Raat on Chuna. No gradients, no drop shadows.</p>
+      <p><i>03</i>Corners stay square. Buttons, cards and forms have no rounding, like drafted sheets.</p>
+      <p><i>04</i>Italic is the brand’s gesture. Use it once per heading, on the words that turn the sentence.</p>
+      <p><i>05</i>A faint paper grain sits over dark pages so screens feel printed, not lit.</p>
+    </div>
+  </div>
+  <div class="btns" style="margin-top:28px"><a class="btn" href="./#contact">Start a project →</a><a class="btn g" href="./#plot">Try the plot tool →</a></div>
+</section>
+
+<section>
+  <p class="lab">Voice</p>
+  <h2>Plain words, <em>local facts.</em></h2>
+  <div class="voice">
+    <div class="yes"><h3>We say</h3><ul><li>“A 10 marla house, three storeys, four bedrooms.”</li><li>“The render you approve is the house we build.”</li><li>“We reply within 24 hours on working days.”</li><li>Marla, kanal, baithak, sehan, barsati: the words clients use.</li></ul></div>
+    <div class="no"><h3>We avoid</h3><ul><li>“World-class, iconic, best in Pakistan.”</li><li>Statistics we cannot source.</li><li>Stock photos of glass towers that are not ours.</li><li>Jargon a family would need to look up.</li></ul></div>
+  </div>
+</section>
+
+<footer><span>© Mehrab Studio. Placeholder identity prepared as a design sample.</span><a href="./">Back to the site →</a></footer>
+</div>
+</body>
+</html>

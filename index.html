@@ -5,24 +5,25 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Mehrab Studio | Architecture in Gujrat</title>
 <meta name="description" content="Architecture, interiors, landscape and town planning in Gujrat, Punjab. Try the marla and kanal plot tool and watch the sun move across a jali facade.">
-<meta name="theme-color" content="#0a0c0f">
+<meta name="theme-color" content="#0e0c0a">
 <meta name="color-scheme" content="dark">
 <meta property="og:title" content="Mehrab Studio | Architecture in Gujrat">
 <meta property="og:description" content="A Gujrat architecture studio. Move the sun, lift the floors and reshape a house on your own plot.">
 <meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 32'%3E%3Crect width='24' height='32' fill='%230a0c0f'/%3E%3Cpath d='M4 30V13C4 8 8 4 12 2c4 2 8 6 8 11v17' fill='none' stroke='%23c9a25a' stroke-width='1.6'/%3E%3C/svg%3E">
-<style>html{background:#0a0c0f;color-scheme:dark}body{margin:0}</style>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 42%27%3E%3Crect width=%2732%27 height=%2742%27 fill=%27%230e0c0a%27/%3E%3Cpath d=%27M3 41V18C3 10 9 5 16 1c7 4 13 9 13 17v23%27 fill=%27none%27 stroke=%27%23c9a050%27 stroke-width=%272%27/%3E%3Cpath d=%27M16 15l1.6 2.2 2.7-.5-.5 2.7L22 21l-2.2 1.6.5 2.7-2.7-.5L16 27l-1.6-2.2-2.7.5.5-2.7L10 21l2.2-1.6-.5-2.7 2.7.5z%27 fill=%27%23d9774e%27/%3E%3C/svg%3E">
+<style>html{background:#0e0c0a;color-scheme:dark}body{margin:0}</style>
 </head>
 <body>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300;600;800&family=Hanken+Grotesk:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..800;1,6..96,400..700&family=Schibsted+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Gulzar&text=%D9%85%DB%81%D8%B1%D8%A7%D8%A8&display=swap" rel="stylesheet">
 <style>
 /* Layout concept: one fixed WebGL stage; sticky text panels float over it like title blocks on a drawing sheet.
    Condensed architectural lettering, mono for drawing annotations, a single brass accent. Committed dark look. */
 :root{
-  --ink:#0a0c0f; --ink-2:#12151a; --paper:#ece6da; --mute:#a09d94; --line:rgba(236,230,218,.16);
-  --brass:#c9a25a; --brass-hi:#efd196;
+  --ink:#0e0c0a; --ink-2:#17130f; --paper:#efe7d8; --mute:#a09d94; --line:rgba(239,231,216,.16);
+  --brass:#c9a050; --brass-hi:#e8c987;
   --f-display:'Big Shoulders Display','Arial Narrow',Impact,sans-serif;
   --f-body:'Hanken Grotesk',system-ui,-apple-system,'Segoe UI',sans-serif;
   --f-mono:'IBM Plex Mono',ui-monospace,Menlo,Consolas,monospace;
@@ -39,7 +40,7 @@ a{color:inherit}
 ::selection{background:var(--brass);color:var(--ink)}
 :focus-visible{outline:2px solid var(--brass-hi);outline-offset:3px}
 #gl{position:fixed;inset:0;width:100%;height:100%;display:block;z-index:0}
-.nogl body{background:radial-gradient(120% 90% at 70% 40%,#3a2a1c 0%,#0a0c0f 70%)}
+.nogl body{background:radial-gradient(120% 90% at 70% 40%,#3a2a1c 0%,#0e0c0a 70%)}
 .nogl #gl{display:none}
 main{position:relative;z-index:2}
 .wrap{padding-left:var(--gut);padding-right:var(--gutR);max-width:1560px;margin:0 auto;width:100%}
@@ -53,7 +54,7 @@ p{margin:0}
 .muted{color:var(--mute)}
 
 /* header */
-.top{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:30;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px var(--gutR) 28px var(--gut);background:linear-gradient(180deg,rgba(10,12,15,.78),rgba(10,12,15,0));pointer-events:none}
+.top{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:30;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px var(--gutR) 28px var(--gut);background:linear-gradient(180deg,rgba(14,12,10,.78),rgba(14,12,10,0));pointer-events:none}
 .top>*{pointer-events:auto}
 .mark{display:flex;align-items:center;gap:12px;text-decoration:none;font-family:var(--f-display);font-weight:800;font-size:1.55rem;letter-spacing:.08em;text-transform:uppercase;line-height:1}
 .mark svg{width:22px;height:30px;stroke:var(--brass);fill:none;stroke-width:1.5}
@@ -81,7 +82,7 @@ p{margin:0}
 
 /* hero */
 .hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:flex-end;padding-bottom:max(56px,env(safe-area-inset-bottom,0px));isolation:isolate}
-.hero::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(0deg,rgba(7,9,12,.88) 0%,rgba(7,9,12,.45) 38%,rgba(7,9,12,0) 62%),linear-gradient(90deg,rgba(7,9,12,.7) 0%,rgba(7,9,12,0) 55%)}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(0deg,rgba(12,10,8,.88) 0%,rgba(12,10,8,.45) 38%,rgba(12,10,8,0) 62%),linear-gradient(90deg,rgba(12,10,8,.7) 0%,rgba(12,10,8,0) 55%)}
 .hero h1{font-size:clamp(3rem,8.4vw,8.4rem);line-height:.84;font-weight:800;margin:6px 0 30px}
 .hero h1 span{display:block;animation:rise 1s cubic-bezier(.2,.7,.2,1) both}
 .hero h1 span:nth-child(2){animation-delay:.12s;color:var(--brass-hi)}
@@ -96,7 +97,7 @@ p{margin:0}
 @media(pointer:coarse){.hint-orbit{display:none}}
 
 /* manifesto */
-.manifesto{padding:30vh 0 24vh;background:linear-gradient(180deg,rgba(7,9,12,0),rgba(7,9,12,.74) 22%,rgba(7,9,12,.74) 78%,rgba(7,9,12,0))}
+.manifesto{padding:30vh 0 24vh;background:linear-gradient(180deg,rgba(12,10,8,0),rgba(12,10,8,.74) 22%,rgba(12,10,8,.74) 78%,rgba(12,10,8,0))}
 .big{font-family:var(--f-display);font-weight:600;text-transform:uppercase;font-size:clamp(2.1rem,5.4vw,4.9rem);line-height:.98;max-width:19ch;margin:0 auto;text-align:left}
 .big .w{opacity:.16;transition:none}
 .facts{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin:12vh auto 0;max-width:1100px;border-top:1px solid var(--line)}
@@ -110,12 +111,12 @@ p{margin:0}
 .tall{position:relative}
 #light{height:178vh}#anatomy{height:340vh}#plot{height:172vh}#process{height:380vh}#work{height:420vh}
 .stick{position:sticky;top:0;height:100vh;height:100svh;display:flex;align-items:center;isolation:isolate;overflow:hidden}
-.stick::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(90deg,rgba(7,9,12,.9) 0%,rgba(7,9,12,.62) 36%,rgba(7,9,12,0) 62%)}
+.stick::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(90deg,rgba(12,10,8,.9) 0%,rgba(12,10,8,.62) 36%,rgba(12,10,8,0) 62%)}
 .panel{max-width:33rem;display:flex;flex-direction:column;gap:22px}
 .panel h2{margin-bottom:2px}
 @media(max-width:860px){
   .stick{align-items:flex-end;padding-bottom:max(84px,calc(env(safe-area-inset-bottom,0px) + 84px))}
-  .stick::before{background:linear-gradient(0deg,rgba(7,9,12,.95) 0%,rgba(7,9,12,.84) 52%,rgba(7,9,12,0) 86%)}
+  .stick::before{background:linear-gradient(0deg,rgba(12,10,8,.95) 0%,rgba(12,10,8,.84) 52%,rgba(12,10,8,0) 86%)}
   .panel{gap:14px}
   .panel p{font-size:.97rem;line-height:1.5}
   h2{font-size:clamp(2.5rem,12vw,3.6rem)}
@@ -126,7 +127,7 @@ p{margin:0}
 }
 
 /* sun */
-.sun{border:1px solid var(--line);background:rgba(10,12,15,.55);backdrop-filter:blur(8px);padding:18px 20px;display:grid;gap:12px}
+.sun{border:1px solid var(--line);background:rgba(14,12,10,.55);backdrop-filter:blur(8px);padding:18px 20px;display:grid;gap:12px}
 .sun .row{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
 .sun .time{font-family:var(--f-display);font-weight:800;font-size:3rem;line-height:1;color:var(--brass-hi);font-variant-numeric:tabular-nums}
 .sun .read{color:var(--mute);text-align:right;line-height:1.7}
@@ -140,7 +141,7 @@ input[type=range].sunrange::-moz-range-thumb{width:14px;height:14px;background:v
 .scale{display:flex;justify-content:space-between;color:var(--mute);font-family:var(--f-mono);font-size:.6rem;letter-spacing:.12em}
 
 /* dock */
-.dock{position:fixed;z-index:35;left:var(--gut);bottom:max(16px,env(safe-area-inset-bottom,0px));display:flex;align-items:center;gap:14px;padding:10px 14px;background:rgba(10,12,15,.78);backdrop-filter:blur(10px);border:1px solid var(--line);width:min(440px,calc(100vw - var(--gut) - var(--gutR)))}
+.dock{position:fixed;z-index:35;left:var(--gut);bottom:max(16px,env(safe-area-inset-bottom,0px));display:flex;align-items:center;gap:14px;padding:10px 14px;background:rgba(14,12,10,.78);backdrop-filter:blur(10px);border:1px solid var(--line);width:min(440px,calc(100vw - var(--gut) - var(--gutR)))}
 .dock svg{width:20px;height:20px;flex:none;stroke:var(--brass);fill:none;stroke-width:1.6}
 .dock .t{font-family:var(--f-mono);font-size:.74rem;letter-spacing:.06em;width:5.4em;flex:none;font-variant-numeric:tabular-nums}
 .dock input{flex:1;min-width:0}
@@ -150,20 +151,20 @@ input[type=range].sunrange::-moz-range-thumb{width:14px;height:14px;background:v
 .tag{position:absolute;left:0;top:0;width:15rem;opacity:0;will-change:transform,opacity;padding-left:34px}
 .tag::before{content:"";position:absolute;left:0;top:11px;width:26px;height:1px;background:var(--brass)}
 .tag::after{content:"";position:absolute;left:-3px;top:8px;width:7px;height:7px;background:var(--brass);border-radius:50%}
-.tag{background:linear-gradient(90deg,rgba(10,12,15,.78),rgba(10,12,15,.5));padding-top:6px;padding-bottom:7px;padding-right:10px;margin-top:-6px}
+.tag{background:linear-gradient(90deg,rgba(14,12,10,.78),rgba(14,12,10,.5));padding-top:6px;padding-bottom:7px;padding-right:10px;margin-top:-6px}
 .tag b{display:block;font-family:var(--f-mono);font-weight:500;font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--brass-hi)}
 .tag span{display:block;font-size:.86rem;line-height:1.4;color:#e4ded1;margin-top:3px;text-shadow:0 1px 8px rgba(0,0,0,.7)}
 .tag.dim{width:auto;padding:0;text-align:center;background:none;margin:0}
 .tag.dim::before,.tag.dim::after{display:none}
-.tag.dim b{background:rgba(10,12,15,.8);border:1px solid var(--brass);padding:4px 8px;display:inline-block;color:var(--paper)}
+.tag.dim b{background:rgba(14,12,10,.8);border:1px solid var(--brass);padding:4px 8px;display:inline-block;color:var(--paper)}
 @media(max-width:700px){.tag span{display:none}.tag{width:9rem}}
 
 /* plot */
 .chips{display:flex;flex-wrap:wrap;gap:8px}
-.chip{font-family:var(--f-mono);font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;background:rgba(10,12,15,.55);color:var(--paper);border:1px solid var(--line);padding:12px 16px;cursor:pointer;transition:.2s}
+.chip{font-family:var(--f-mono);font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;background:rgba(14,12,10,.55);color:var(--paper);border:1px solid var(--line);padding:12px 16px;cursor:pointer;transition:.2s}
 .chip:hover{border-color:var(--brass)}
 .chip[aria-checked=true]{background:var(--brass);color:var(--ink);border-color:var(--brass)}
-.stats{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);background:rgba(10,12,15,.55);backdrop-filter:blur(8px)}
+.stats{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);background:rgba(14,12,10,.55);backdrop-filter:blur(8px)}
 .stats div{padding:13px 16px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
 .stats div:nth-child(2n){border-right:0}.stats div:nth-last-child(-n+2){border-bottom:0}
 .stats small{display:block;font-family:var(--f-mono);font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;color:var(--mute)}
@@ -174,10 +175,10 @@ input[type=range].sunrange::-moz-range-thumb{width:14px;height:14px;background:v
 
 /* work */
 .work-stick{overflow:hidden;align-items:center}
-.work-stick::before{background:linear-gradient(0deg,rgba(7,9,12,.5),rgba(7,9,12,.5))}
+.work-stick::before{background:linear-gradient(0deg,rgba(12,10,8,.5),rgba(12,10,8,.5))}
 .track{display:flex;gap:clamp(18px,2.4vw,34px);align-items:stretch;padding-left:var(--gut);padding-right:calc(var(--gutR) + 8vw);will-change:transform;height:min(72vh,620px)}
 .intro{flex:none;width:min(88vw,34rem);display:flex;flex-direction:column;justify-content:flex-end;gap:20px;padding-bottom:6px}
-.card{flex:none;width:clamp(290px,40vw,500px);display:flex;flex-direction:column;border:1px solid var(--line);background:rgba(10,12,15,.5);backdrop-filter:blur(8px);transform:perspective(1000px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));transition:transform .25s ease-out,border-color .25s;position:relative}
+.card{flex:none;width:clamp(290px,40vw,500px);display:flex;flex-direction:column;border:1px solid var(--line);background:rgba(14,12,10,.5);backdrop-filter:blur(8px);transform:perspective(1000px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));transition:transform .25s ease-out,border-color .25s;position:relative}
 .card:hover{border-color:var(--brass)}
 .art{flex:1;min-height:0;position:relative;background:
  linear-gradient(var(--line) 1px,transparent 1px) 0 0/32px 32px,
@@ -209,14 +210,14 @@ input[type=range].sunrange::-moz-range-thumb{width:14px;height:14px;background:v
 .bar i{display:block;height:100%;width:0;background:var(--brass)}
 
 /* contact */
-.contact{position:relative;min-height:100vh;padding:20vh 0 0;display:flex;flex-direction:column;justify-content:space-between;background:linear-gradient(180deg,rgba(7,9,12,0),rgba(7,9,12,.38) 30%,rgba(7,9,12,.88))}
+.contact{position:relative;min-height:100vh;padding:20vh 0 0;display:flex;flex-direction:column;justify-content:space-between;background:linear-gradient(180deg,rgba(12,10,8,0),rgba(12,10,8,.38) 30%,rgba(12,10,8,.88))}
 .contact h2{font-size:clamp(3.4rem,11vw,10rem);line-height:.84;margin-bottom:30px}
 .cgrid{display:grid;grid-template-columns:1.1fr 1fr;gap:44px;align-items:start}
 @media(max-width:860px){.cgrid{grid-template-columns:1fr}}
-form{display:grid;grid-template-columns:1fr 1fr;gap:14px;border:1px solid var(--line);background:rgba(10,12,15,.7);backdrop-filter:blur(10px);padding:22px}
+form{display:grid;grid-template-columns:1fr 1fr;gap:14px;border:1px solid var(--line);background:rgba(14,12,10,.7);backdrop-filter:blur(10px);padding:22px}
 form .full{grid-column:1/-1}
 label{display:grid;gap:6px;font-family:var(--f-mono);font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--mute)}
-input[type=text],input[type=tel],select,textarea{font:400 1rem var(--f-body);letter-spacing:0;text-transform:none;color:var(--paper);background:rgba(236,230,218,.05);border:1px solid var(--line);padding:12px 12px;width:100%;border-radius:0}
+input[type=text],input[type=tel],select,textarea{font:400 1rem var(--f-body);letter-spacing:0;text-transform:none;color:var(--paper);background:rgba(239,231,216,.05);border:1px solid var(--line);padding:12px 12px;width:100%;border-radius:0}
 select option{background:var(--ink-2)}
 input:focus,select:focus,textarea:focus{outline:none;border-color:var(--brass)}
 textarea{min-height:84px;resize:vertical}
@@ -251,12 +252,12 @@ html{scrollbar-color:#4a4132 var(--ink);scrollbar-width:thin}
 .chip:focus-visible,.autobtn:focus-visible,.card .open:focus-visible{outline:2px solid var(--brass-hi);outline-offset:3px}
 .chip:active,.autobtn:active{transform:scale(.97)}
 .autobtn{min-height:30px;transition:.2s}.autobtn:hover{border-color:var(--brass);color:var(--brass-hi)}
-.iconbtn{width:46px;height:46px;display:inline-grid;place-items:center;background:rgba(10,12,15,.6);border:1px solid var(--line);color:var(--paper);cursor:pointer;transition:.2s;flex:none}
+.iconbtn{width:46px;height:46px;display:inline-grid;place-items:center;background:rgba(14,12,10,.6);border:1px solid var(--line);color:var(--paper);cursor:pointer;transition:.2s;flex:none}
 .iconbtn:hover{border-color:var(--brass);color:var(--brass-hi)}.iconbtn:active{transform:scale(.95)}
 .iconbtn svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
 /* header right + burger + menu */
 .hdr-r{display:flex;align-items:center;gap:10px}
-.burger{display:none;width:46px;height:46px;border:1px solid var(--line);background:rgba(10,12,15,.6);cursor:pointer;position:relative;flex:none;transition:border-color .2s}
+.burger{display:none;width:46px;height:46px;border:1px solid var(--line);background:rgba(14,12,10,.6);cursor:pointer;position:relative;flex:none;transition:border-color .2s}
 .burger:hover{border-color:var(--brass)}
 .burger i{position:absolute;left:13px;right:13px;height:1.5px;background:var(--paper);transition:.25s}
 .burger i:nth-child(1){top:17px}.burger i:nth-child(2){top:22px}.burger i:nth-child(3){top:27px}
@@ -264,7 +265,7 @@ html{scrollbar-color:#4a4132 var(--ink);scrollbar-width:thin}
 .burger[aria-expanded=true] i:nth-child(2){opacity:0}
 .burger[aria-expanded=true] i:nth-child(3){top:22px;transform:rotate(-45deg)}
 @media(max-width:980px){.burger{display:block}}
-.menu{position:fixed;inset:0;z-index:28;background:rgba(7,9,12,.97);backdrop-filter:blur(14px);display:flex;flex-direction:column;justify-content:center;padding:104px var(--gutR) 40px var(--gut);opacity:0;visibility:hidden;transition:opacity .3s,visibility .3s}
+.menu{position:fixed;inset:0;z-index:28;background:rgba(12,10,8,.97);backdrop-filter:blur(14px);display:flex;flex-direction:column;justify-content:center;padding:104px var(--gutR) 40px var(--gut);opacity:0;visibility:hidden;transition:opacity .3s,visibility .3s}
 .menu.open{opacity:1;visibility:visible}
 .menu a.l{font-family:var(--f-display);font-weight:800;text-transform:uppercase;font-size:clamp(2.4rem,11vw,4.2rem);line-height:1.04;text-decoration:none;padding:6px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:baseline;transition:color .2s,padding .2s}
 .menu a.l:hover{color:var(--brass-hi);padding-left:8px}
@@ -274,7 +275,7 @@ body.menu-open{overflow:hidden}
 .dock{transition:opacity .3s}.dock.hide{opacity:0;pointer-events:none}
 body.menu-open .dock{opacity:0;pointer-events:none}
 /* flow sections */
-.flow{position:relative;padding:18vh 0 14vh;background:linear-gradient(180deg,rgba(7,9,12,0),rgba(7,9,12,.84) 14%,rgba(7,9,12,.84) 90%,rgba(7,9,12,0))}
+.flow{position:relative;padding:18vh 0 14vh;background:linear-gradient(180deg,rgba(12,10,8,0),rgba(12,10,8,.84) 14%,rgba(12,10,8,.84) 90%,rgba(12,10,8,0))}
 .sechead{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:24px 60px;margin-bottom:54px}
 .sechead .lede{max-width:44ch}
 .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}
@@ -297,7 +298,7 @@ body.menu-open .dock{opacity:0;pointer-events:none}
 @keyframes slide{to{transform:translateX(calc(-50% - 22px))}}
 @media(prefers-reduced-motion:reduce){.band{white-space:normal}.band div{animation:none;flex-wrap:wrap;row-gap:10px}}
 .voices{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.q{border:1px solid var(--line);background:rgba(10,12,15,.6);padding:34px 28px 26px;display:flex;flex-direction:column;gap:24px;position:relative;margin:0}
+.q{border:1px solid var(--line);background:rgba(14,12,10,.6);padding:34px 28px 26px;display:flex;flex-direction:column;gap:24px;position:relative;margin:0}
 .q blockquote{margin:0;font-family:var(--f-display);font-weight:600;font-size:1.7rem;line-height:1.1;letter-spacing:.005em}
 .q cite{font-style:normal;font-family:var(--f-mono);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);margin-top:auto;line-height:1.7}
 .q .sample{position:absolute;top:-1px;right:-1px;font-family:var(--f-mono);font-size:.54rem;letter-spacing:.14em;text-transform:uppercase;background:var(--brass);color:var(--ink);padding:5px 9px}
@@ -337,7 +338,7 @@ details p{padding:0 0 24px;color:#d4cec0;max-width:60ch}
 .mchips{display:flex;flex-wrap:wrap;gap:6px}.mchips span{border:1px solid var(--line);padding:5px 9px;font-family:var(--f-mono);font-size:.62rem;letter-spacing:.12em;text-transform:uppercase}
 .mactions{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:auto;padding-top:6px}
 .mactions .sp{flex:1}
-.mclose{position:absolute;top:12px;right:12px;z-index:5;background:rgba(10,12,15,.8)}
+.mclose{position:absolute;top:12px;right:12px;z-index:5;background:rgba(14,12,10,.8)}
 .note-c{font-family:var(--f-mono);font-size:.58rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
 @media(max-width:860px){.sheet{grid-template-columns:1fr}.mart{min-height:250px;border-right:0;border-bottom:1px solid var(--line)}.mbody{padding:22px 18px 20px}}
 /* form polish */
@@ -346,8 +347,8 @@ input[aria-invalid=true],select[aria-invalid=true],textarea[aria-invalid=true]{b
 label.chk{display:flex;align-items:center;gap:12px;font-family:var(--f-body);font-size:.92rem;letter-spacing:0;text-transform:none;color:var(--paper);cursor:pointer}
 label.chk input{width:20px;height:20px;accent-color:var(--brass);flex:none;margin:0}
 input,select,textarea{transition:border-color .2s,background .2s}
-input:hover,select:hover,textarea:hover{border-color:rgba(236,230,218,.34)}
-.done{border:1px solid var(--brass);background:rgba(10,12,15,.78);backdrop-filter:blur(10px);padding:30px;display:flex;flex-direction:column;gap:16px}
+input:hover,select:hover,textarea:hover{border-color:rgba(239,231,216,.34)}
+.done{border:1px solid var(--brass);background:rgba(14,12,10,.78);backdrop-filter:blur(10px);padding:30px;display:flex;flex-direction:column;gap:16px}
 .done h3{font-size:2.6rem;color:var(--brass-hi)}
 .cta-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
 .copy{display:inline-flex;align-items:center;gap:8px;background:none;border:1px solid var(--line);color:var(--mute);font-family:var(--f-mono);font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;padding:5px 9px;margin-left:8px;cursor:pointer;transition:.2s;vertical-align:middle}
@@ -364,7 +365,7 @@ input:hover,select:hover,textarea:hover{border-color:rgba(236,230,218,.34)}
 
 /* header solid on scroll, toast on top */
 .top{transition:background .3s,padding .3s,box-shadow .3s,backdrop-filter .3s}
-.top.solid{background:rgba(10,12,15,.9);backdrop-filter:blur(12px);padding-top:10px;padding-bottom:10px;box-shadow:0 1px 0 var(--line)}
+.top.solid{background:rgba(14,12,10,.9);backdrop-filter:blur(12px);padding-top:10px;padding-bottom:10px;box-shadow:0 1px 0 var(--line)}
 .toast{bottom:auto;top:max(76px,calc(env(safe-area-inset-top,0px) + 76px));transform:translate(-50%,-12px)}
 .toast.show{transform:translate(-50%,0)}
 /* cursor ring */
@@ -373,17 +374,75 @@ input:hover,select:hover,textarea:hover{border-color:rgba(236,230,218,.34)}
 @media(pointer:coarse){.cur{display:none}}
 body.dragging{cursor:grabbing;user-select:none}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.hero h1 span,.hint i{animation:none}*{transition-duration:.01ms!important}}
+
+/* ================= MEHRAB BRAND LAYER =================
+   Palette from Gujrat's building materials:
+   Raat (night) #0E0C0A · Chuna (lime plaster) #EFE7D8 · Peetal (brass) #C9A050
+   Bhatta (kiln brick) #B4532F · Chenab (river silt) #7A958A · Khaak (dust) #A39A8B
+   Type: Bodoni Moda (display, with italics) · Schibsted Grotesk (text) · IBM Plex Mono (drawing notes)
+   Motif: the eight-point khatam star from the jali. */
+:root{
+  --ink:#0e0c0a; --ink-2:#17130f; --paper:#efe7d8; --mute:#a39a8b; --line:rgba(239,231,216,.15);
+  --brass:#c9a050; --brass-hi:#e8c987; --brick:#b4532f; --brick-hi:#d9774e; --chenab:#7a958a;
+  --f-display:'Bodoni Moda','Didot','Bodoni 72',Georgia,serif;
+  --f-body:'Schibsted Grotesk','Helvetica Neue',Arial,sans-serif;
+  --f-urdu:'Gulzar','Noto Nastaliq Urdu','Jameel Noori Nastaleeq',serif;
+  --star:polygon(50.0% 0.0%,64.6% 14.7%,85.4% 14.6%,85.3% 35.4%,100.0% 50.0%,85.3% 64.6%,85.4% 85.4%,64.6% 85.3%,50.0% 100.0%,35.4% 85.3%,14.6% 85.4%,14.7% 64.6%,0.0% 50.0%,14.7% 35.4%,14.6% 14.6%,35.4% 14.7%);
+}
+body::after{content:"";position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.09;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .94 0 0 0 0 .9 0 0 0 0 .84 0 0 0 .55 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");mix-blend-mode:overlay}
+::selection{background:var(--brick);color:var(--paper)}
+h1,h2,h3{text-transform:none;font-weight:500;letter-spacing:-.022em;line-height:.98;font-optical-sizing:auto}
+h1 em,h2 em,h3 em{font-style:italic;font-weight:400;color:var(--brass-hi)}
+h2{font-size:clamp(2.6rem,6vw,5.6rem)}
+.hero h1{font-size:clamp(2.55rem,7.6vw,8rem);line-height:.94;letter-spacing:-.03em;font-weight:500}
+.hero h1 span:nth-child(2){font-style:italic;font-weight:400;color:var(--brick-hi)}
+.eyebrow::before{width:11px;height:11px;background:var(--brass);clip-path:var(--star)}
+.eyebrow{gap:12px}
+.big{text-transform:none;font-weight:400;letter-spacing:-.02em;line-height:1.08;font-size:clamp(2rem,4.8vw,4.4rem)}
+.facts b{text-transform:none;font-weight:500;letter-spacing:-.02em;color:var(--paper)}
+.facts b::first-letter{color:var(--brick-hi)}
+.sun .time,.stats b{font-weight:500;letter-spacing:-.01em}
+.stats b{font-size:1.75rem}
+.menu a.l,.band div,.q blockquote,summary{text-transform:none;letter-spacing:-.015em}
+.menu a.l{font-weight:500}.menu a.l:hover span{font-style:italic}
+.band div{font-weight:400;font-style:italic;font-size:2.1rem}
+.band b{width:12px;height:12px;font-size:0;background:var(--brick);clip-path:var(--star)}
+.q blockquote{font-weight:400;font-size:1.6rem;line-height:1.2}
+.q .sample{background:var(--brick);color:var(--paper)}
+summary{font-weight:500;font-size:1.5rem;line-height:1.15}
+details[open] summary{font-style:italic;color:var(--brass-hi)}
+.cap h3{font-size:1.75rem;font-weight:500}
+.step h3{font-weight:500}.step.on h3{font-style:italic}
+.step.on .n{color:var(--brick-hi)}
+.tile h3{font-size:2.1rem;font-weight:500}
+.tile:hover h3{font-style:italic}
+.mbody h3,.done h3{font-weight:500}
+.contact h2{font-size:clamp(3rem,9.5vw,9rem);line-height:.92;letter-spacing:-.03em}
+.prog{background:linear-gradient(90deg,var(--brass),var(--brick))}
+.btn{border-radius:0}
+.btn:not(.ghost):hover{background:var(--paper);border-color:var(--paper);color:var(--ink);box-shadow:0 10px 30px -12px rgba(201,160,80,.6)}
+/* logo lockup */
+.mark{gap:12px;font-family:var(--f-display);font-weight:600;letter-spacing:.2em;font-size:1.2rem}
+.mark svg{width:26px;height:34px;stroke-width:1.4}
+.mark .ur{font-family:var(--f-urdu);font-weight:400;letter-spacing:0;font-size:1.25rem;color:var(--brass);margin-left:2px;line-height:1;direction:rtl;padding-left:10px;border-left:1px solid var(--line)}
+.mark small{letter-spacing:.32em;font-size:.52rem;margin-top:5px}
+@media(max-width:560px){.mark .ur{display:none}.mark{font-size:1.05rem}}
+.foot b{font-family:var(--f-display);text-transform:none;letter-spacing:-.01em;font-weight:500;font-size:2rem}
+.foot .ur{font-family:var(--f-urdu);color:var(--brass);font-size:1.6rem;display:block;margin:-2px 0 10px;direction:rtl;text-align:left}
+.facts b{font-size:clamp(1.8rem,3vw,2.7rem)}
+.sun .time{white-space:nowrap;font-size:clamp(2.2rem,8vw,3rem)}
+@media(max-width:860px){.hero h1{font-size:clamp(2.4rem,11vw,3.4rem)}h2{font-size:clamp(2.3rem,10.5vw,3.3rem)}}
 </style>
 
 <canvas id="gl" aria-hidden="true"></canvas>
-<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><pattern id="jl" width="12" height="12" patternUnits="userSpaceOnUse"><path d="M0 6L6 0L12 6L6 12Z" fill="none" stroke="#c9a25a" stroke-opacity=".6" stroke-width=".7"/></pattern></defs></svg>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><pattern id="jl" width="12" height="12" patternUnits="userSpaceOnUse"><path d="M0 6L6 0L12 6L6 12Z" fill="none" stroke="#c9a050" stroke-opacity=".6" stroke-width=".7"/></pattern></defs></svg>
 
 <a class="skip" href="#contact">Skip to contact</a>
 <div class="prog" id="prog" aria-hidden="true"></div>
 <header class="top">
   <a class="mark" href="#hero" aria-label="Mehrab Studio, top of page">
-    <svg viewBox="0 0 24 32" aria-hidden="true"><path d="M3 31V13C3 7 8 3 12 1c4 2 9 6 9 12v18"/><path d="M8 31V14c0-3 2-5 4-6.5 2 1.500 4 3.500 4 6.500v17"/></svg>
-    <span>Mehrab<small>Architects · Gujrat</small></span>
+    <svg viewBox="0 0 32 42" aria-hidden="true"><path d="M3 41V18C3 10 9 5 16 1c7 4 13 9 13 17v23"/><path d="M8 41V19c0-5 4-9 8-12 4 3 8 7 8 12v22"/><path d="M16 15l1.6 2.2 2.7-.5-.5 2.7L22 21l-2.2 1.6.5 2.7-2.7-.5L16 27l-1.6-2.2-2.7.5.5-2.7L10 21l2.2-1.6-.5-2.7 2.7.5z" fill="currentColor" stroke="none" style="color:var(--brick-hi)"/><path d="M1 41h30"/></svg>
+    <span>Mehrab<small>Architects · Gujrat</small></span><span class="ur" lang="ur">مہراب</span>
   </a>
   <nav class="topnav" aria-label="Sections">
     <a href="#plot">Plot tool</a><a href="#work">Work</a><a href="#services">Services</a><a href="#process">Process</a><a href="#proof">FAQ</a>
@@ -459,7 +518,7 @@ body.dragging{cursor:grabbing;user-select:none}
   <section id="light" class="tall">
     <div class="stick"><div class="wrap"><div class="panel">
       <p class="eyebrow">Light &amp; shade</p>
-      <h2>The jali,<br>redrawn.</h2>
+      <h2>The jali,<br><em>redrawn.</em></h2>
       <p class="lede">Punjab has always cooled its houses with perforated screens. We redraw the jali in concrete, brick and steel so it cuts glare, lets the breeze through and throws a new pattern across the floor every hour.</p>
       <div class="sun">
         <div class="row"><span class="time" data-time>6:10 PM</span><span class="read mono" id="sunRead">Altitude 19°<br>Bearing 262° W</span></div>
@@ -473,7 +532,7 @@ body.dragging{cursor:grabbing;user-select:none}
   <section id="anatomy" class="tall">
     <div class="stick"><div class="wrap"><div class="panel">
       <p class="eyebrow">Anatomy of a house</p>
-      <h2>Every floor<br>has a job.</h2>
+      <h2>Every floor<br>has a <em>job.</em></h2>
       <p class="lede">Pull a Gujrat family home apart and each level answers a different part of daily life. Keep scrolling to lift the floors.</p>
     </div></div></div>
   </section>
@@ -481,7 +540,7 @@ body.dragging{cursor:grabbing;user-select:none}
   <section id="plot" class="tall">
     <div class="stick"><div class="wrap"><div class="panel">
       <p class="eyebrow">Plot to massing</p>
-      <h2>Start with<br>your plot.</h2>
+      <h2>Start with<br><em>your plot.</em></h2>
       <p class="lede">Gujrat plots are sold in marla and kanal. Pick yours and the house reshapes: storeys, setbacks and garden follow the land.</p>
       <div class="chips" role="radiogroup" aria-label="Plot size" id="chips">
         <button class="chip" role="radio" aria-checked="false" data-p="5" type="button">5 marla</button>
@@ -506,7 +565,7 @@ body.dragging{cursor:grabbing;user-select:none}
       <div class="track" id="track">
         <div class="intro">
           <p class="eyebrow">Selected concepts</p>
-          <h2>Six ways<br>to build<br>for Gujrat.</h2>
+          <h2>Six ways<br>to build<br><em>for Gujrat.</em></h2>
           <p class="lede">Concept projects that show the range: homes, a plaza, a workshop, a showroom and a mosque. Hover a sheet to redraw it.</p>
         </div>
       </div>
@@ -515,7 +574,7 @@ body.dragging{cursor:grabbing;user-select:none}
 
   <section id="services" class="flow">
     <div class="wrap">
-      <div class="sechead"><div><p class="eyebrow">What we do</p><h2>One studio,<br>six disciplines.</h2></div><p class="lede">Most Gujrat projects need more than a floor plan. We draw, furnish, plant and supervise under one roof, so there is one team to call when something changes on site.</p></div>
+      <div class="sechead"><div><p class="eyebrow">What we do</p><h2>One studio,<br><em>six disciplines.</em></h2></div><p class="lede">Most Gujrat projects need more than a floor plan. We draw, furnish, plant and supervise under one roof, so there is one team to call when something changes on site.</p></div>
       <div class="svc-grid"><a class="tile" href="#contact" data-need="Architecture"><svg viewBox="0 0 50 50" aria-hidden="true"><path d="M6 44V16l14-8 14 8v28M6 44h28M14 44V30h12v14M40 44V24l10-6v26"/></svg><h3>Architecture</h3><p>Concept, 3D walkthrough, approval and construction drawings for houses, plazas, farmhouses and factories.</p><span class="go">Enquire →</span></a><a class="tile" href="#contact" data-need="Interior design"><svg viewBox="0 0 50 50" aria-hidden="true"><path d="M10 24V14a4 4 0 0 1 4-4h12a4 4 0 0 1 4 4v10M6 26a4 4 0 0 1 8 0v6h16v-6a4 4 0 0 1 8 0v12H6zM12 38v6M32 38v6"/></svg><h3>Interior design</h3><p>Layouts, joinery, lighting and finishes planned with the architecture, so the inside matches the outside.</p><span class="go">Enquire →</span></a><a class="tile" href="#contact" data-need="Landscape"><svg viewBox="0 0 50 50" aria-hidden="true"><path d="M22 6c8 0 14 6 14 13s-6 12-14 12S8 26 8 19 14 6 22 6zM22 31v14M14 45h16"/></svg><h3>Landscape</h3><p>Courtyards, lawns, water and shade trees placed for the sun path, not added at the end.</p><span class="go">Enquire →</span></a><a class="tile" href="#contact" data-need="Town planning"><svg viewBox="0 0 50 50" aria-hidden="true"><path d="M6 6h38v38H6zM6 25h38M25 6v38"/><circle cx="35" cy="15" r="4"/><path d="M12 12h8v7h-8zM12 31h8v7h-8z"/></svg><h3>Town planning</h3><p>Layouts for small housing societies and commercial plots: roads, parks, plot sizes and utilities.</p><span class="go">Enquire →</span></a><a class="tile" href="#contact" data-need="Furniture design"><svg viewBox="0 0 50 50" aria-hidden="true"><path d="M6 16h38v6H6zM12 22v22M38 22v22M12 32h26"/></svg><h3>Furniture design</h3><p>Bespoke pieces drawn with the room and made by Gujrat’s own furniture craftsmen.</p><span class="go">Enquire →</span></a><a class="tile" href="#contact" data-need="Architecture"><svg viewBox="0 0 50 50" aria-hidden="true"><path d="M12 8h26v38H12zM18 4h14v8H18zM18 24l5 5 9-10M18 38h14"/></svg><h3>Supervision &amp; sourcing</h3><p>Weekly site visits, material checks and supplier shortlists so what is built matches what is drawn.</p><span class="go">Enquire →</span></a></div>
       <div class="band" aria-label="Places we build"><div><span>Gujrat</span><b>◆</b><span>Lalamusa</span><b>◆</b><span>Kharian</span><b>◆</b><span>Sarai Alamgir</span><b>◆</b><span>Kunjah</span><b>◆</b><span>Jalalpur Jattan</span><b>◆</b><span>Jhelum</span><b>◆</b><span>Mandi Bahauddin</span><b>◆</b><span>Lahore</span><b>◆</b><span>Overseas Pakistanis</span><b>◆</b><span>Gujrat</span><b>◆</b><span>Lalamusa</span><b>◆</b><span>Kharian</span><b>◆</b><span>Sarai Alamgir</span><b>◆</b><span>Kunjah</span><b>◆</b><span>Jalalpur Jattan</span><b>◆</b><span>Jhelum</span><b>◆</b><span>Mandi Bahauddin</span><b>◆</b><span>Lahore</span><b>◆</b><span>Overseas Pakistanis</span><b>◆</b></div></div>
     </div>
@@ -524,7 +583,7 @@ body.dragging{cursor:grabbing;user-select:none}
   <section id="process" class="tall">
     <div class="stick"><div class="wrap"><div class="panel" style="max-width:36rem">
       <p class="eyebrow">How we work</p>
-      <h2>From survey<br>to handover.</h2>
+      <h2>From survey<br><em>to handover.</em></h2>
       <div class="steps" id="steps">
         <div class="step on"><span class="n">01</span><h3>Site &amp; brief</h3><div class="b"><p>We measure the plot, read the sun path and sit with the family. Who wakes first, where guests are received, who cooks for how many.</p><em>You get: measured survey, sun-path diagram</em></div></div>
         <div class="step"><span class="n">02</span><h3>Concept &amp; massing</h3><div class="b"><p>Two massing options in 3D, walked through on screen with you. Orientation, shade and privacy are settled here, before any drawings.</p><em>You get: two 3D options, a budget range</em></div></div>
@@ -537,14 +596,14 @@ body.dragging{cursor:grabbing;user-select:none}
 
   <section id="proof" class="flow">
     <div class="wrap">
-      <div class="sechead"><div><p class="eyebrow">What clients tell us</p><h2>The render you<br>approve is the<br>house we build.</h2></div><p class="lede">That promise is the whole job. Real client quotes, names and photographs replace the sample copy below before this goes live.</p></div>
+      <div class="sechead"><div><p class="eyebrow">What clients tell us</p><h2>The render you<br>approve is the<br><em>house we build.</em></h2></div><p class="lede">That promise is the whole job. Real client quotes, names and photographs replace the sample copy below before this goes live.</p></div>
       <div class="voices">
         <figure class="q"><span class="sample">Sample copy</span><blockquote>“The 3D we approved in the first meeting is the house we moved into. Nothing was quietly changed on site.”</blockquote><cite>Homeowner · Civil Lines, Gujrat<br>Placeholder quote</cite></figure>
         <figure class="q"><span class="sample">Sample copy</span><blockquote>“I run a business in Dubai. Weekly site photos and a video call every Sunday meant I never felt out of the loop.”</blockquote><cite>Overseas client · 1 kanal plot<br>Placeholder quote</cite></figure>
         <figure class="q"><span class="sample">Sample copy</span><blockquote>“Structure, electrical and plumbing were coordinated before tender. Far fewer arguments with the contractor.”</blockquote><cite>Developer · Bhimber Road<br>Placeholder quote</cite></figure>
       </div>
       <div class="faq">
-        <div><p class="eyebrow">Questions</p><h2>Before you<br>call us.</h2></div>
+        <div><p class="eyebrow">Questions</p><h2>Before you<br><em>call us.</em></h2></div>
         <div>
           <details><summary>How is an architect’s fee decided?</summary><p>Usually as a percentage of construction cost or a rate per square foot of covered area. We quote in writing after the first site visit, once we know the plot, the brief and the level of finish.</p></details>
           <details><summary>How long does the design take?</summary><p>Indicatively, a 10 marla house takes three to four weeks for concept and 3D, then four to six weeks for approval and working drawings. Larger or commercial projects take longer.</p></details>
@@ -560,7 +619,7 @@ body.dragging{cursor:grabbing;user-select:none}
   <section id="contact" class="contact">
     <div class="wrap">
       <p class="eyebrow">Begin</p>
-      <h2>Let’s draw<br>your plot.</h2>
+      <h2>Let’s draw<br><em>your plot.</em></h2>
       <div class="cgrid">
         <div>
           <p class="lede" style="max-width:34ch">Tell us the plot size and where in Gujrat it sits. We reply within 24 hours on working days with a site-visit time.</p>
@@ -598,9 +657,9 @@ body.dragging{cursor:grabbing;user-select:none}
       </div>
     </div>
     <div class="wrap"><footer class="foot">
-      <div><b>Mehrab Studio</b><p>Architecture, interiors, landscape and town planning for Gujrat and the families who build there.</p></div>
+      <div><b>Mehrab Studio</b><span class="ur" lang="ur">مہراب</span><p>Architecture, interiors, landscape and town planning for Gujrat and the families who build there.</p></div>
       <div><small>Studio</small><a href="#work">Work</a><a href="#services">Services</a><a href="#process">Process</a><a href="#proof">FAQ</a></div>
-      <div><small>Tools</small><a href="#light">Sun dial</a><a href="#anatomy">Anatomy</a><a href="#plot">Plot tool</a></div>
+      <div><small>Tools</small><a href="#light">Sun dial</a><a href="#anatomy">Anatomy</a><a href="#plot">Plot tool</a><a href="brand.html">Brand guide</a></div>
       <div><small>Visit</small><span>Civil Lines, Gujrat</span><span>Mon to Sat, 10 am to 6 pm</span><span class="mono" style="font-size:.66rem;letter-spacing:.14em">32.5742° N / 74.0754° E</span></div>
       <div class="fbase"><span>© Mehrab Studio. Placeholder name, projects, quotes and figures. A concept site prepared as a design sample.</span><button class="btn ghost sm" type="button" id="toTop">Back to top <span class="arr" aria-hidden="true" style="transform:rotate(-90deg)">→</span></button></div>
     </footer></div>
@@ -751,8 +810,8 @@ function initScene(){
   const faded=[];
   const M=(o,base=1)=>{const m=new THREE.MeshStandardMaterial(o);faded.push([m,base]);return m};
   const mat={
-    slab:M({color:col('#b6aea1'),roughness:.93}),
-    plinth:M({color:col('#837d72'),roughness:.95}),
+    slab:M({color:col('#c2b6a2'),roughness:.93}),
+    plinth:M({color:col('#7a4a35'),roughness:.95}),
     jali:M({color:col('#dccdaa'),roughness:.85,alphaMap:jTex,alphaTest:.5,side:THREE.DoubleSide}),
     fins:M({color:col('#8b5b35'),roughness:.7}),
     glass:M({color:col('#161d23'),roughness:.18,metalness:.55,emissive:0xffffff,emissiveMap:gTex,emissiveIntensity:.2}),
@@ -770,9 +829,9 @@ function initScene(){
   };
   const poolMat=new THREE.MeshBasicMaterial({color:0x335577});
   const lampMat=new THREE.MeshBasicMaterial({color:0xffb96e});
-  const edgeMat=new THREE.LineBasicMaterial({color:col('#ece6da'),transparent:true,opacity:.08});
-  const gridMat=new THREE.LineBasicMaterial({color:col('#c9a25a'),transparent:true,opacity:.07});
-  const plotLineMat=new THREE.LineBasicMaterial({color:col('#efd196'),transparent:true,opacity:.7});
+  const edgeMat=new THREE.LineBasicMaterial({color:col('#efe7d8'),transparent:true,opacity:.08});
+  const gridMat=new THREE.LineBasicMaterial({color:col('#c9a050'),transparent:true,opacity:.07});
+  const plotLineMat=new THREE.LineBasicMaterial({color:col('#e8c987'),transparent:true,opacity:.7});
   const depthJali=new THREE.MeshDepthMaterial({depthPacking:THREE.RGBADepthPacking,alphaMap:jTex,alphaTest:.5,side:THREE.DoubleSide});
 
   const box=(w,h,d,m,edge=true,cast=true)=>{const g=new THREE.BoxGeometry(w,h,d);const me=new THREE.Mesh(g,m);me.castShadow=cast;me.receiveShadow=true;if(edge)me.add(new THREE.LineSegments(new THREE.EdgesGeometry(g),edgeMat));return me};
@@ -843,12 +902,12 @@ function initScene(){
   [[-2.1],[2.1]].forEach(([a])=>{const b=box(.2,.2,4,mat.steel,false);b.position.set(a,2.4,0);roofG.add(b)});
   const tank=new THREE.Mesh(new THREE.CylinderGeometry(.65,.65,1.3,16),mat.steel);tank.position.set(3.1,.65,-2.6);tank.castShadow=true;roofG.add(tank);
   const axG=new THREE.BufferGeometry();axG.setAttribute('position',new THREE.BufferAttribute(new Float32Array(8*3),3));
-  const axM=new THREE.LineBasicMaterial({color:col('#efd196'),transparent:true,opacity:0});
+  const axM=new THREE.LineBasicMaterial({color:col('#e8c987'),transparent:true,opacity:0});
   const axL=new THREE.LineSegments(axG,axM);axL.frustumCulled=false;bG.add(axL);
 
   /* pool, trees, neighbours, far ring, motes */
   const pool=new THREE.Mesh(new THREE.PlaneGeometry(1,1),poolMat);pool.rotation.x=-Math.PI/2;pool.position.y=.07;scene.add(pool);
-  const poolEdge=new THREE.LineLoop(new THREE.BufferGeometry().setFromPoints([new V3(-.5,0,-.5),new V3(.5,0,-.5),new V3(.5,0,.5),new V3(-.5,0,.5)]),new THREE.LineBasicMaterial({color:col('#c9a25a'),transparent:true,opacity:.6}));poolEdge.position.y=.08;scene.add(poolEdge);
+  const poolEdge=new THREE.LineLoop(new THREE.BufferGeometry().setFromPoints([new V3(-.5,0,-.5),new V3(.5,0,-.5),new V3(.5,0,.5),new V3(-.5,0,.5)]),new THREE.LineBasicMaterial({color:col('#c9a050'),transparent:true,opacity:.6}));poolEdge.position.y=.08;scene.add(poolEdge);
   const trees=[];
   const tg=new THREE.CylinderGeometry(.12,.2,2.4,6),cg=new THREE.IcosahedronGeometry(1.5,1);
   for(let i=0;i<12;i++){const g=new THREE.Group();const t=new THREE.Mesh(tg,mat.trunk);t.position.y=1.2;t.castShadow=true;const c=new THREE.Mesh(cg,mat.crown);c.position.y=3.3;c.scale.set(1,.9+(i%3)*.12,1);c.castShadow=true;g.add(t,c);g.userData={side:i<8?(i%2?1:-1):(i%2?1:-1),f:[.12,.12,.36,.36,.62,.62,.86,.86,0,0,0,0][i],kind:i<8?'side':(i<10?'front':'rear')};scene.add(g);trees.push(g)}
@@ -860,10 +919,10 @@ function initScene(){
   const NM=240,mp=new Float32Array(NM*3),mph=[];
   for(let i=0;i<NM;i++){mp[i*3]=(rnd()-.5)*60;mp[i*3+1]=rnd()*22;mp[i*3+2]=(rnd()-.5)*60;mph.push(rnd()*6.28)}
   const moteGeo=new THREE.BufferGeometry();moteGeo.setAttribute('position',new THREE.BufferAttribute(mp,3));
-  const moteMat=new THREE.PointsMaterial({color:col('#efd196'),size:.22,map:dotTex(),transparent:true,opacity:.5,depthWrite:false,blending:THREE.AdditiveBlending});
+  const moteMat=new THREE.PointsMaterial({color:col('#e8c987'),size:.22,map:dotTex(),transparent:true,opacity:.5,depthWrite:false,blending:THREE.AdditiveBlending});
   const motes=new THREE.Points(moteGeo,moteMat);motes.frustumCulled=false;scene.add(motes);
 
-  const edgeCol=col('#ece6da'),edgeBP=col('#a9c8ff'),gridBP=col('#6e9bff'),gridCol=col('#c9a25a'),groundCol=col('#16181b'),groundBP=col('#0c2250');
+  const edgeCol=col('#efe7d8'),edgeBP=col('#a9c8ff'),gridBP=col('#6e9bff'),gridCol=col('#c9a050'),groundCol=col('#16181b'),groundBP=col('#0c2250');
   const tmp=new V3(),tmp2=new V3(),moon=new V3(-.45,.7,.55).normalize(),sdir=new V3();
   const bz=()=>-Pl.d/2+.6+4.85*Pl.sz;
   const info={sunEl:0,sunBear:0,hr:18};
