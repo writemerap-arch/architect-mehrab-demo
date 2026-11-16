@@ -432,6 +432,101 @@ details[open] summary{font-style:italic;color:var(--brass-hi)}
 .facts b{font-size:clamp(1.8rem,3vw,2.7rem)}
 .sun .time{white-space:nowrap;font-size:clamp(2.2rem,8vw,3rem)}
 @media(max-width:860px){.hero h1{font-size:clamp(2.4rem,11vw,3.4rem)}h2{font-size:clamp(2.3rem,10.5vw,3.3rem)}}
+
+/* ================= v3: HERO · HEADER · BUTTONS ================= */
+/* hero: text and model get separate zones */
+.hero{align-items:flex-end;padding-bottom:max(30px,env(safe-area-inset-bottom,0px));padding-top:110px}
+.hero::before{background:linear-gradient(90deg,rgba(12,10,8,.92) 0%,rgba(12,10,8,.72) 30%,rgba(12,10,8,.18) 52%,rgba(12,10,8,0) 64%),linear-gradient(0deg,rgba(12,10,8,.85) 0%,rgba(12,10,8,0) 30%)}
+.hero-grid{display:flex;flex-direction:column;gap:clamp(30px,6vh,64px)}
+.hero-copy{max-width:min(44rem,47vw)}
+.hero h1{font-size:clamp(2.5rem,5.3vw,5.9rem);line-height:.98;letter-spacing:-.032em;margin:0 0 26px}
+.hero h1 span{display:block}
+.hero-lede{max-width:34ch;font-size:1.08rem;line-height:1.6;color:#d8cfbf;margin:0 0 30px}
+.hero .cta{margin:0}
+.hero-strip{display:flex;justify-content:space-between;align-items:center;gap:20px;color:var(--mute);font-size:.62rem;letter-spacing:.2em}
+.hero-strip .hint{display:flex;align-items:center;gap:12px}
+.hero-strip .hint i{display:block;width:1px;height:26px;background:linear-gradient(var(--brass),transparent);animation:drip 2s ease-in-out infinite}
+.hero .eyebrow{margin-bottom:22px}
+.rail{transition:opacity .4s}.rail.away{opacity:0;pointer-events:none}
+.rail a.on span{opacity:0;transform:translateX(6px)}.rail a:hover span{opacity:1;transform:none}
+@media(max-width:860px){
+  .hero{padding-top:0}
+  .hero::before{background:linear-gradient(0deg,rgba(12,10,8,.97) 0%,rgba(12,10,8,.9) 40%,rgba(12,10,8,.45) 55%,rgba(12,10,8,0) 66%)}
+  .hero-copy{max-width:100%}
+  .hero .eyebrow{display:none}
+  .hero h1{font-size:clamp(2.2rem,9.6vw,3.1rem);margin-bottom:16px}
+  .hero-lede{font-size:.98rem;margin-bottom:22px}
+  .hero .cta{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .hero .cta .btn{padding-left:10px;padding-right:10px;font-size:.64rem;letter-spacing:.12em}
+  .hero-grid{gap:26px}
+  .hero-strip .hint-orbit{display:none}
+}
+@media(max-width:420px){.hero-strip>span:first-child{display:none}.hero-strip{justify-content:flex-start}}
+
+/* header: drafting nav */
+.top{padding:18px var(--gutR) 18px var(--gut);background:linear-gradient(180deg,rgba(14,12,10,.7),rgba(14,12,10,0));transition:transform .5s cubic-bezier(.2,.7,.2,1),background .3s,padding .3s,box-shadow .3s}
+.top.solid{background:rgba(14,12,10,.82);backdrop-filter:blur(14px) saturate(1.2);-webkit-backdrop-filter:blur(14px) saturate(1.2);padding-top:10px;padding-bottom:10px;box-shadow:0 1px 0 var(--line)}
+.top.away{transform:translateY(-110%)}
+body.menu-open .top{transform:none}
+.mark{transition:opacity .2s}.mark:hover svg{color:var(--brass-hi)}
+.mark svg{transition:transform .5s cubic-bezier(.2,.7,.2,1)}.mark:hover svg{transform:translateY(-2px)}
+.navbar{position:relative;display:flex;gap:0;padding:4px;border:1px solid var(--line);background:rgba(14,12,10,.45);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.navbar::before,.navbar::after{content:"";position:absolute;width:9px;height:9px;border:1px solid var(--brass);pointer-events:none}
+.navbar::before{left:-5px;top:-5px;border-right:0;border-bottom:0}
+.navbar::after{right:-5px;bottom:-5px;border-left:0;border-top:0}
+.navbar a{position:relative;z-index:1;padding:10px 16px;font-family:var(--f-mono);font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;text-decoration:none;color:var(--mute);transition:color .25s}
+.navbar a:hover,.navbar a.on{color:var(--paper)}
+.navbar .ind{position:absolute;z-index:0;top:4px;bottom:4px;left:0;width:0;background:rgba(201,160,80,.12);border-bottom:1px solid var(--brass);opacity:0;transition:left .45s cubic-bezier(.2,.8,.2,1),width .45s cubic-bezier(.2,.8,.2,1),opacity .3s}
+.sunchip{display:inline-flex;align-items:center;gap:9px;height:42px;padding:0 14px;border:1px solid var(--line);color:var(--paper);text-decoration:none;font-family:var(--f-mono);font-size:.68rem;letter-spacing:.08em;font-variant-numeric:tabular-nums;background:rgba(14,12,10,.45);backdrop-filter:blur(12px);transition:border-color .25s,color .25s}
+.sunchip:hover{border-color:var(--brass);color:var(--brass-hi)}
+.sunchip .dial{width:24px;height:14px;fill:none;stroke:var(--brass);stroke-width:1.2;overflow:visible}
+.sunchip .dial .hz{stroke:var(--line)}
+.sunchip .dial .sd{fill:var(--brick-hi);stroke:none;transition:fill .4s}
+.sunchip.night .dial .sd{fill:var(--paper)}
+.hdr-r{gap:12px}
+@media(max-width:1180px){.sunchip{display:none}}
+@media(max-width:980px){.navbar{display:none}}
+@media(max-width:600px){.hdr-cta{display:none}}
+
+/* mobile menu: staged reveal over a jali field */
+.menu{background:rgba(12,10,8,.97)}
+.menu::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.16;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'%3E%3Cg fill='none' stroke='%23c9a050' stroke-width='1'%3E%3Cpath d='M32 8l7 17 17 7-17 7-7 17-7-17-17-7 17-7z'/%3E%3Crect x='21' y='21' width='22' height='22' transform='rotate(45 32 32)'/%3E%3C/g%3E%3C/svg%3E");-webkit-mask-image:linear-gradient(110deg,transparent 35%,#000 100%);mask-image:linear-gradient(110deg,transparent 35%,#000 100%)}
+.menu a.l{position:relative;opacity:0;transform:translateY(18px)}
+.menu.open a.l{animation:menuIn .7s cubic-bezier(.2,.8,.2,1) both;animation-delay:calc(var(--i,0) * 55ms + 80ms)}
+@keyframes menuIn{to{opacity:1;transform:none}}
+.menu-foot{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;margin-top:28px;position:relative}
+.menu-foot .foot-m{margin:0}
+
+/* buttons: the drafted button */
+.btn{position:relative;isolation:isolate;overflow:visible;gap:12px;padding:14px 22px;min-height:48px;font-family:var(--f-mono);font-size:.7rem;letter-spacing:.18em;transition:color .35s,border-color .35s,transform .35s cubic-bezier(.2,.8,.2,1);will-change:transform}
+.btn,.btn:hover,.btn:not(.ghost):hover{background:var(--brass);border-color:var(--brass);color:var(--ink);box-shadow:none}
+.btn.ghost,.btn.ghost:hover{background:rgba(14,12,10,.35);backdrop-filter:blur(8px);border-color:rgba(239,231,216,.28);color:var(--paper)}
+.btn::before{content:"";position:absolute;inset:-1px;z-index:-1;background:var(--paper);transform:scaleX(0);transform-origin:right center;transition:transform .55s cubic-bezier(.7,0,.2,1)}
+.btn.ghost::before{background:var(--brass)}
+.btn:hover::before,.btn:focus-visible::before{transform:scaleX(1);transform-origin:left center}
+.btn:hover,.btn.ghost:hover{color:var(--ink)}
+.btn.ghost:hover{border-color:var(--brass)}
+.btn::after{content:"";position:absolute;inset:-7px;pointer-events:none;opacity:0;transform:scale(.92);transition:opacity .35s,transform .45s cubic-bezier(.2,.8,.2,1);
+  background:
+   linear-gradient(var(--brass),var(--brass)) left top/10px 1px no-repeat,linear-gradient(var(--brass),var(--brass)) left top/1px 10px no-repeat,
+   linear-gradient(var(--brass),var(--brass)) right top/10px 1px no-repeat,linear-gradient(var(--brass),var(--brass)) right top/1px 10px no-repeat,
+   linear-gradient(var(--brass),var(--brass)) left bottom/10px 1px no-repeat,linear-gradient(var(--brass),var(--brass)) left bottom/1px 10px no-repeat,
+   linear-gradient(var(--brass),var(--brass)) right bottom/10px 1px no-repeat,linear-gradient(var(--brass),var(--brass)) right bottom/1px 10px no-repeat}
+.btn:hover::after,.btn:focus-visible::after{opacity:1;transform:none}
+.btn:focus-visible{outline:none}
+.btn:active{transform:scale(.97)}
+.btn .roll{display:inline-flex;overflow:hidden;line-height:1.3;height:1.3em;white-space:pre}
+.btn .ch{display:inline-block;position:relative;transition:transform .5s cubic-bezier(.7,0,.2,1);transition-delay:calc(var(--i) * 14ms)}
+.btn .ch::after{content:attr(data-c);position:absolute;left:0;top:100%}
+.btn:hover .ch,.btn:focus-visible .ch{transform:translateY(-100%)}
+.btn .arr{display:inline-block;overflow:hidden;line-height:1}
+.btn:hover .arr{transform:none;animation:arrLoop .6s cubic-bezier(.7,0,.2,1)}
+@keyframes arrLoop{0%{transform:none}48%{transform:translateX(140%)}49%{transform:translateX(-140%)}100%{transform:none}}
+.btn .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.btn svg{transition:transform .4s}.btn:hover svg{transform:rotate(-10deg) scale(1.08)}
+.btn.sm{min-height:42px;padding:11px 16px;font-size:.64rem}
+.btn[aria-disabled=true]{opacity:.6}
+@media(prefers-reduced-motion:reduce){.btn .ch,.btn::before,.btn::after{transition:none}.btn:hover .arr{animation:none}.menu.open a.l{animation:none;opacity:1;transform:none}}
 </style>
 
 <canvas id="gl" aria-hidden="true"></canvas>
@@ -439,16 +534,18 @@ details[open] summary{font-style:italic;color:var(--brass-hi)}
 
 <a class="skip" href="#contact">Skip to contact</a>
 <div class="prog" id="prog" aria-hidden="true"></div>
-<header class="top">
+<header class="top" id="top">
   <a class="mark" href="#hero" aria-label="Mehrab Studio, top of page">
     <svg viewBox="0 0 32 42" aria-hidden="true"><path d="M3 41V18C3 10 9 5 16 1c7 4 13 9 13 17v23"/><path d="M8 41V19c0-5 4-9 8-12 4 3 8 7 8 12v22"/><path d="M16 15l1.6 2.2 2.7-.5-.5 2.7L22 21l-2.2 1.6.5 2.7-2.7-.5L16 27l-1.6-2.2-2.7.5.5-2.7L10 21l2.2-1.6-.5-2.7 2.7.5z" fill="currentColor" stroke="none" style="color:var(--brick-hi)"/><path d="M1 41h30"/></svg>
     <span>Mehrab<small>Architects · Gujrat</small></span><span class="ur" lang="ur">مہراب</span>
   </a>
-  <nav class="topnav" aria-label="Sections">
+  <nav class="topnav navbar" id="navbar" aria-label="Sections">
+    <span class="ind" aria-hidden="true"></span>
     <a href="#plot">Plot tool</a><a href="#work">Work</a><a href="#services">Services</a><a href="#process">Process</a><a href="#proof">FAQ</a>
   </nav>
   <div class="hdr-r">
-    <a class="btn sm" href="#contact">Start a project <span class="arr" aria-hidden="true">→</span></a>
+    <a class="sunchip" href="#light" title="Time of day in the 3D scene. Click to change it."><svg class="dial" viewBox="0 0 26 15" aria-hidden="true"><path d="M2 14a11 11 0 0 1 22 0"/><path d="M1 14h24" class="hz"/><circle class="sd" cx="13" cy="3" r="2.4"/></svg><span data-time>6:10 PM</span></a>
+    <a class="btn sm hdr-cta" href="#contact">Start a project <span class="arr" aria-hidden="true">→</span></a>
     <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu"><i></i><i></i><i></i></button>
   </div>
 </header>
@@ -461,7 +558,7 @@ details[open] summary{font-style:italic;color:var(--brass-hi)}
   <a class="l" href="#process"><span>Process</span><small>Survey to handover</small></a>
   <a class="l" href="#proof"><span>FAQ</span><small>Common questions</small></a>
   <a class="l" href="#contact"><span>Contact</span><small>24 h reply</small></a>
-  <p class="foot-m mono">Civil Lines, Gujrat</p>
+  <div class="menu-foot"><a class="btn" href="#contact">Start a project <span class="arr" aria-hidden="true">→</span></a><p class="foot-m mono">Civil Lines, Gujrat · <span data-time>6:10 PM</span></p></div>
 </div>
 
 <nav class="rail" aria-label="Page position">
@@ -488,17 +585,20 @@ details[open] summary{font-style:italic;color:var(--brass-hi)}
 
 <main>
   <section id="hero" class="hero">
-    <div class="wrap">
-      <p class="eyebrow">Architecture · Interiors · Site supervision</p>
-      <h1><span>Architecture for</span><span>the long Punjab</span><span>afternoon.</span></h1>
-      <div class="cta">
-        <a class="btn" href="#contact">Start a project <span class="arr" aria-hidden="true">→</span></a>
-        <a class="btn ghost" href="#plot">Try the plot tool <span class="arr" aria-hidden="true">→</span></a>
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Architects in Gujrat, Punjab</p>
+        <h1><span>Architecture for</span> <span>the long Punjab</span> <span>afternoon.</span></h1>
+        <p class="lede hero-lede">Houses, plazas and workshops designed for the heat, the monsoon and the way Punjabi families live.</p>
+        <div class="cta">
+          <a class="btn" href="#contact">Start a project <span class="arr" aria-hidden="true">→</span></a>
+          <a class="btn ghost" href="#plot">Try the plot tool <span class="arr" aria-hidden="true">→</span></a>
+        </div>
       </div>
-      <div class="hero-foot">
-        <p class="lede">A Gujrat studio designing houses, plazas and workshops for the heat, the monsoon and the way Punjabi families actually live.</p>
-        <p class="meta mono">32.5742° N &nbsp;74.0754° E<br><b>Gujrat, Punjab</b></p>
-        <p class="hint mono"><i></i><span>Scroll<span class="hint-orbit"> · drag to orbit</span></span></p>
+      <div class="hero-strip mono">
+        <span>32.5742° N · 74.0754° E</span>
+        <span class="hint"><i></i>Scroll to explore</span>
+        <span class="hint-orbit">Drag the model to orbit</span>
       </div>
     </div>
   </section>
@@ -707,7 +807,7 @@ const fine=matchMedia('(pointer:fine)').matches;
 /* ============ camera / scene keyframes (driven by scroll) ============ */
 const key=(az,r,h,ty,sx,explode,bp,sun,dim,look)=>({az,r,h,ty,sx,explode,bp,sun,dim,look});
 const K={
-  hero:    key(26, 36, 7,  8, .30, 0, 0,   .76, 0, 0),
+  hero:    key(24, 40, 7.5, 8.5, .44, 0, 0,   .76, 0, 0),
   belief:  key(72, 36, 7,  8, 0,   0, 0,   .50, 0, 0),
   light_a: key(-14,21, 5.5,7, .26, 0, 0,   .40, 0, 0),
   light_b: key(10, 17, 6,  8, .26, 0, 0,   .72, 0, 0),
@@ -996,11 +1096,11 @@ function initScene(){
     /* camera */
     const asp=innerWidth/innerHeight,portrait=asp<.9;
     const camK=lerp(1,clamp(Math.sqrt(Pl.w*Pl.d/506),.9,1.4),S.look);
-    const pf=portrait?1+(1-asp)*2.0:(asp<1.3?1+(1.3-asp)*.4:1);
+    const pf=portrait?1+(1-asp)*2.3:(asp<1.3?1+(1.3-asp)*.4:1);
     const rr=S.r*camK*pf;
     const azr=(S.az+dragAz+mouse.x*2.5)*Math.PI/180;
     const tz=lerp(bzv,0,S.look),ty=S.ty*lerp(1,camK,S.look);
-    const sx=portrait?0:S.sx,sy=portrait?S.sx*1.15:0;
+    const sx=portrait?0:S.sx,sy=portrait?Math.min(.5,S.sx*1.2):0;
     const rx=Math.cos(azr),rz=-Math.sin(azr);
     const offX=-sx*rr*.42,offY=-sy*rr*.3;
     cam.position.set(Math.sin(azr)*rr+rx*offX,S.h*lerp(1,camK,S.look)*(1+(pf-1)*.7)+offY+mouse.y*1.2,tz+Math.cos(azr)*rr+rz*offX);
@@ -1240,6 +1340,7 @@ function tick(now){
   railA.forEach(a=>a.classList.toggle('on',a.dataset.s===cs));navA.forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+cs));
   $('#dock').classList.toggle('hide',(cs==='hero'&&y<30)||cs==='services'||cs==='proof');
   $('.top').classList.toggle('solid',y>60);
+  headerTick(y,sunUser!=null?sunUser:S.sun);
   prog.style.transform=`scaleX(${clamp(y/Math.max(1,document.documentElement.scrollHeight-innerHeight))})`;
 
   if(cur){px+=(cx-px)*.2;py+=(cy-py)*.2;cur.style.transform=`translate(${px}px,${py}px)`}
@@ -1259,9 +1360,9 @@ fName.addEventListener('blur',()=>{if(fName.value)vName()});fPhone.addEventListe
 form.addEventListener('submit',e=>{
   e.preventDefault();const a=vName(),b=vPhone();
   if(!a||!b){(!a?fName:fPhone).focus();say('Please check the highlighted fields.');return}
-  const btn=$('#fSubmit');btn.setAttribute('aria-disabled','true');btn.setAttribute('aria-busy','true');$('#fLabel').textContent='Sending…';
+  const btn=$('#fSubmit');btn.setAttribute('aria-disabled','true');btn.setAttribute('aria-busy','true');rollText($('#fLabel'),'Sending…');
   setTimeout(()=>{
-    btn.removeAttribute('aria-disabled');btn.removeAttribute('aria-busy');$('#fLabel').textContent='Request a consultation';
+    btn.removeAttribute('aria-disabled');btn.removeAttribute('aria-busy');rollText($('#fLabel'),'Request a consultation');
     $('#doneName').textContent=fName.value.trim().split(/\s+/)[0];
     $('#doneTxt').textContent=`We would call ${fPhone.value.trim()} about your ${$('#fPlot').value.toLowerCase()} plot${$('#fArea').value.trim()?' in '+$('#fArea').value.trim():''}${$('#fAbroad').checked?', and set up a video call to suit your time zone':''}, within 24 hours on a working day.`;
     form.hidden=true;$('#done').hidden=false;
@@ -1274,6 +1375,35 @@ $$('[data-copy]').forEach(b=>b.addEventListener('click',async()=>{
 }));
 $$('.tile').forEach(t=>t.addEventListener('click',()=>{const need=$('#fNeed');need.value=t.dataset.need;}));
 $('#toTop').addEventListener('click',()=>scrollTo({top:0,behavior:reduce?'auto':'smooth'}));
+
+/* ============ v3: buttons, nav indicator, header behaviour, sun chip ============ */
+function rollText(el,txt){
+  el.textContent='';const sr=document.createElement('span');sr.className='sr';sr.textContent=txt;
+  const roll=document.createElement('span');roll.className='roll';roll.setAttribute('aria-hidden','true');
+  [...txt].forEach((c,i)=>{const ch=document.createElement('span');ch.className='ch';const v=c===' '?'\u00a0':c;ch.textContent=v;ch.dataset.c=v;ch.style.setProperty('--i',i);roll.appendChild(ch)});
+  el.append(sr,roll);
+}
+$$('.btn').forEach(btn=>{
+  [...btn.childNodes].filter(n=>n.nodeType===3&&n.textContent.trim()).forEach(n=>{const w=document.createElement('span');n.replaceWith(w);rollText(w,n.textContent.trim())});
+  const fl=btn.querySelector('#fLabel');if(fl)rollText(fl,fl.textContent.trim());
+  if(fine&&!reduce){
+    btn.addEventListener('pointermove',e=>{const r=btn.getBoundingClientRect();const dx=(e.clientX-r.left-r.width/2)/r.width,dy=(e.clientY-r.top-r.height/2)/r.height;btn.style.transform=`translate(${dx*8}px,${dy*6}px)`});
+    btn.addEventListener('pointerleave',()=>{btn.style.transform=''});
+  }
+});
+const navbar=$('#navbar'),ind=navbar?$('.ind',navbar):null;let navHover=false;
+function moveInd(a){if(!ind)return;if(!a){ind.style.opacity=0;return}const nr=navbar.getBoundingClientRect(),r=a.getBoundingClientRect();ind.style.left=(r.left-nr.left)+'px';ind.style.width=r.width+'px';ind.style.opacity=1}
+if(navbar){$$('a',navbar).forEach(a=>{a.addEventListener('pointerenter',()=>{navHover=true;moveInd(a)})});navbar.addEventListener('pointerleave',()=>{navHover=false;moveInd($('a.on',navbar))})}
+$$('#menu a.l').forEach((a,i)=>a.style.setProperty('--i',i));
+const topEl=$('#top'),railEl=$('.rail'),sunchip=$('.sunchip'),sd=sunchip?$('.sd',sunchip):null;let lastY=scrollY,lastOn=null;
+function headerTick(y,sunT){
+  if(!menuOpen){if(y>lastY+6&&y>innerHeight*.6)topEl.classList.add('away');else if(y<lastY-6||y<80)topEl.classList.remove('away')}
+  lastY=y;
+  if(railEl)railEl.classList.toggle('away',y<innerHeight*.5);
+  const on=navbar?$('a.on',navbar):null;if(on!==lastOn&&!navHover){moveInd(on);lastOn=on}
+  if(sd){const hr=6+sunT*16;if(hr<=19.5){const t=clamp((hr-5.5)/14),a=Math.PI*(1-t);sd.setAttribute('cx',(13+11*Math.cos(a)).toFixed(2));sd.setAttribute('cy',(14-11*Math.sin(a)).toFixed(2));sunchip.classList.remove('night')}else{sd.setAttribute('cx','20');sd.setAttribute('cy','4');sunchip.classList.add('night')}}
+}
+addEventListener('resize',()=>{lastOn=null});
 
 /* ============ boot ============ */
 try{gl=initScene()}catch(err){console.error(err);gl=null}
